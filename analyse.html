@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Cloudwalking</title>
+    </head>
+    <body>
+        <div class="top-bar">Fri frakt over 400kr</div>
+        <div id="grid-container">
+        <header>
+                <a href="index.html" id="Logo">Cloudwalking</a>
+                
+                <div class="mobil-navbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="produkt.html">Produkter</a></li>
+                        <li><a href="handlekurv.html">Handlekurv</a></li>
+                        <li><a href="analyse.html">Analyse</a></li>
+                    </ul>
+                    <label>
+                        Søk
+                        <input type="text" name="search" placeholder="Merke,uniformsko..">
+                    </label>
+                </nav>
+        </header>
+        <main>
+            <h1>Nettsteds Analyse og forbedringer</h1>
+                <section>
+                    <h4>Nøkkelord</h4>
+                        <p>Ettersom oppgaven vår i stor grad har vært å lage en nettbutikk for sko, falt det selvfølgelig naturlig å velge nøkkelord som er forbundet med sko. Jeg valgte nøkkelordene mine basert på
+                            at de jevnt over ble søkt etter geografisk over hele Norge, at de har relevans til hva nettsiden faktisk selger, men også hva jeg personlig tror brukeren ville søkt etter. 
+                            Nettstedet jeg har laget baserer seg på målgruppen flyvende personell. Jeg har derfor tatt hensyn til dette også, når jeg har valgt ut nøkkelord.</p>
+                        <p id="nokkelord">Mine nøkkelord ble derfor:</p>
+                        <ul id="nokkelliste">
+                            <li>Sko</li>
+                            <li>Pensko</li>
+                            <li>Uniform</li>
+                            <li>Fly</li>
+                            <li>Såler</li>
+                        </ul>
+                        <img src="img/googletrends.png" alt="skjermbilde av nøkkelord">
+                </section>
+                <!--Nytt område for lighthouseanalysen-->
+                <section>
+                    <h4>SEO analyse med Lighthouse og Webaim</h4>
+                    <p>I tråd med oppgavens neste punkt kjørte jeg en SEO analyse ved hjelp av lighthouse på alle 3 sidene av nettsiden. Under kan vi se analysen av de forskjellige sidene, før det ble gjort endringer.</p>
+                        <p>Forside:</p>
+                            <img src="img/pre-adjustments/index /startbilde.png" alt="skjermbilde av lighthouse analyse">
+                            <img src="img/pre-adjustments/index /performance.png" alt="skjermbilde av performance analyse">
+                                <p>I analysen av siden sin performance kan vi se at siden gjør det relativt godt i sammenlikning med andre sider. Lighthouse gir performance på forsiden en 99.</p>
+                            <img src="img/pre-adjustments/index /accesability.png" alt="skjermbilde av accesibility analyse">
+                                <p>På accesibility kan vi se at Lighthouse gir en score på 92 og begrunner det med at bakgrunnen ikke har stor nok kontrast.</p>
+                            <img src="img/pre-adjustments/index /best_practices.png" alt="skjermbilde av best practices analyse">
+                                <p>Best practices får en score på 95, hvor lighthouse begrunner det med at den finner en browser feil linket til nettsiden.</p>
+                            <img src="img/pre-adjustments/index /seo.png" alt="skjermbilde av seo analyse">
+                                <p>Forsiden får en score på 95 for SEO, hvor det begrunnes med at det mangler metadata.</p>
+                        <h4>Produktside:</h4>
+                            <img src="img/pre-adjustments/produkt/produkt.png" alt="skjermbilde av lighthouse analyse produktside">
+                            <img src="img/pre-adjustments/produkt/produkt_performance.png" alt="skjermbilde av performance analyse produktside">
+                                <p>I analysen av produktsiden kan vi se at lighthouse gir en score på 97 for performance.</p>
+                            <img src="img/pre-adjustments/produkt/produkt_accesability.png" alt="skjermbilde av accesability analyse produktside">
+                                <p>Videre ser vi at lighthouse gir en score på 84 for accesibility. Lighthouse begrunner det med at bakgrunnen ikke har stor nok kontrast og at handlekurv buttons ikke har særegne attributter.</p>
+                            <img src="img/pre-adjustments/produkt/produkt_best_practices.png" alt="skjermbilde av best practices analyse produktside">
+                                <p>På best practices for produktsiden gir lighthouse en score på 95. Det begrunnes med samme browser feil som nevnt på forsiden.</p>
+                            <img src="img/pre-adjustments/produkt/produkt_seo.png" alt="skjermbilde av seo analyse produktside">
+                                <p>Produktsiden får en score på 92 og det begrunnes med at det mangler metadata og metadescription.</p>
+                        <h4>Handlekurv</h4>
+                            <img src="img/pre-adjustments/handlekurv/handlekurv.png" alt="skjermbilde av lighthouse analyse handlekurvside">
+                            <img src="img/pre-adjustments/handlekurv/handlekurv_perf.png" alt="skjermbilde av performance analyse handlekurvside">
+                                <p>I analysen av handlekurven gir lighthouse handlekurvsiden en score på 98 for performance. Gjennom mitt arbeid med lighthouse analyse har jeg bemerket meg at performance scoren ofte varierer ut i fra hvilket nett man er koblet til.</p>
+                            <img src="img/pre-adjustments/handlekurv/handlekurv_access.png" alt="skjermbilde av accesability analyse handlekurvside">
+                                <p>Når det kommer til accesability i handlekurven gir lighthouse handlekurvsiden en score på 92 og begrunner det med at knappene med tekst har for liten kontrastfarge. De vil derfor bli vanskelig for noen brukere å lese.</p>
+                            <img src="img/pre-adjustments/handlekurv/handlekurv_bp.png" alt="skjermbilde av best practices analyse handlekurvside">
+                                <p>Best practices har samme gjentagende problem når det kommer til browser.</p>
+                            <img src="img/pre-adjustments/handlekurv/handlekurv_seo.png" alt="skjermbilde av seo analyse handlekurvside">
+                                <p>Handlekurven har også samme gjentagende problem med at det mangler metadata og metadescription. Lighthouse gir derfor nettsiden en score på 92 for SEO her også.</p>
+                </section>
+                <!--Nytt område for UU-analyse-->
+                <section>
+                    <h4>UU-analyse via Webaim</h4>
+                    <p>Slik som oppgaven viser til har jeg kjørt en uu-analyse gjennom Webaim for å undersøke hvor tilgjengelig er nettsiden er. Dette for å sikre at vi når alle brukere på best mulig måte.</p>
+                        <p>Forside:</p>
+                            <img src="img/pre-adjustments/UU_pre/index/uu_index1.png" alt="skjermbilde av webaim analyseside">
+                                <p>Slik ser det første resultatet vi får opp for nettsiden ut. Her ser vi at det er ingen error, men det finnes flere kontrast error og noen alerts. I neste bilde skal vi se på hva de ulike kategoriene betyr.</p>
+                            <img src="img/pre-adjustments/UU_pre/index/uu_index.png" alt="skjermbilde av en større webaim analyseside">
+                                <p>Analysen til Webaim konstanterer at det er flere områder på nettsiden som har for lite kontrastfarger. Dette gjelder jevnt over på alle områdene man ser de rød punktene. Videre viser analysen til at det mangler en h1 på forsiden og at Herre knappen linker til samme
+                                side som dame knappen. Dette gjelder de gule områdene. Ut i fra analysen kan det se ut til at det må endres på farger, slik at kontrastene blir større. Samt sette inn en h1 og fjerne linken fra herre-knappen.</p>
+                        <h4>Produktside</h4>
+                            <img src="img/pre-adjustments/UU_pre/produkt/uu_produkt.png" alt="skjermbilde av webaim analyse av produktside">
+                                <p>På produktsiden kan vi se at det igjen ikke er noen error tilstede, men flere kontrast-error. Den gir også beskjed om 3 alerts, hvor blant annet en av dem er at de tre bildene har samme alt beskrivelse og at det mangler en h1 på hele nettstedet.</p>
+                        <h4>Handlekurv</h4>
+                            <img src="img/pre-adjustments/UU_pre/handlekurv/uu_handlekurv.png" alt="skjermbilde av webaim analyse av handlekurvside">
+                                <p>I analysen av handlekurvsiden er det igjen ingen error, men til gjengjeld en del kontrast-error. Den gir også flere alerts hvor den blant annet foreslår at man skal sette inn en h1 eller h2 på områder som kan ligne overskrifter.
+                                    Analysen gir også beskjed om at brødsmulestien linker til samme sted. Den foreslår også at man kan lage en listeordning i handlekurven isteden for p-tag</p>
+                </section>
+                <!---Nytt område for chatgpt-analyse-->
+                <section>
+                    <h4>ChatGpt-analyse</h4>
+                    <p>I tråd med oppgaven beveget jeg meg videre til et tredje analyseverktøy. Her var oppgaven å få chatgpt til å produsere mulige endringer/løsninger, uten at den skulle endre på noen kode. Jeg åpnet derfor med å spørre slik:</p>
+                        <img src="img/pre-adjustments/chatgpt/index/chat_index1.png" alt="skjermbilde av chatgpt spørsmål">
+                            <p>Etter å ha gitt chatgpt koden til index.html filen ga den meg dette svaret:</p>
+                        <img src="img/pre-adjustments/chatgpt/index/chat_index2.png" alt="skjermbilde av chagptanalyse for indexkode">
+                        <img src="img/pre-adjustments/chatgpt/index/chat_index3.png" alt="nytt skjermbilde av chatgptanalyse for indexkode">
+                            <p>Her la den vekt på hva som var bra, men ga meg også forslag til hva jeg kunne endre på. Jeg gikk videre og sendte den koden for produkt.html, og fikk til svar:</p>
+                        <img src="img/pre-adjustments/chatgpt/produkt/chat_produkt1.png" alt="skjermbilde av chatgptanalyse for produktkode">
+                        <img src="img/pre-adjustments/chatgpt/produkt/chat_produkt2.png" alt="nytt skjermbilde av chatgptanalyse for produktkode">
+                            <p>Her produserer chatgpt på lik måte en liste når det kommer til hva den syntes er bra og forslag til forbedringer. Det samme gjør den også for handlekurv.html slik vi kan se under:</p>
+                        <img src="img/pre-adjustments/chatgpt/handlekurv/chat_handlekurv.png" alt="skjermbilde av chagptanalyse av handlekurvkode">
+                    <p>Jeg ønsket at chatgpt skulle ta hensyn til css jeg hadde skrevet og spurte den derfor om å ta hensyn til all koden jeg hadde sendt fra før og samtidig se på css, for så å lage en oppsumering.
+                        Oppsumeringen skulle da være for alle 3 sidene av nettsidene, inkludert css. Da ga den meg følgende liste:</p>
+                        <img src="img/pre-adjustments/chatgpt/oppsummering/chat_oppsumering.png" alt="skjermbilde av chagpt oppsumering">
+                        <img src="img/pre-adjustments/chatgpt/oppsummering/chat_oppsumering2.png" alt=" nytt skjermbilde av chatgpt oppsumering">
+                </section>
+                <!--Nytt område for tabell-->
+                <section>
+                    <h4>Tabell</h4>
+                    <table id="tabell">
+                        <tr>
+                            <th>Område for endring</th>
+                            <th>Lighthouse</th>
+                            <th>Webaim</th>
+                            <th>ChatGpt</th>
+                            <th>Sammenlikning</th>
+                        </tr>
+                        <tr>
+                            <td>Accesibility og SEO</td>
+                            <td>Beskriver at det er for dårlig kontrast mellom bakgrunnen og skrift på flere elementer på siden. Gir også beskjed om at det finnes duplikater av samme id. Forelslår endring på alt attributter 
+                                på bildene tilhørende produktsiden.</td>
+                            <td> Gir også beskjed om at det er for dårlig kontrast mellom bakgrunnen og skrift på flere av elementene på siden. Foreslår også at det bør settes inn en h1,foreslår endring på alt beskrivelser tilhørende bilder på produktsiden</td>
+                            <td>Foreslår flere alt attributter på bilder, endring av prisformatering fra ,- til kr, endring av labels på knapper, foreslår en meta tag i head, foreslår å inkludere et favicon,
+                                foreslår endring av alt beskrivelser på bilder tilhørende produktsiden.</td>
+                            <td>Boks 5</td>
+                        </tr>
+                        <tr>
+                            <td>Boks 1</td>
+                            <td>Boks 2</td>
+                            <td>Boks 3</td>
+                            <td>Boks 4</td>
+                            <td>Boks 5</td>
+                        </tr>
+                    </table>
+                </section>
+
+        </main>
+    </div>
+        <footer class="flex-section-footer">
+            <ul class="socials">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-tiktok"></i></li>
+            </ul>
+            <p>Lorem Ipsum. Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette.</p>
+        </footer>
+    </body>
+</html>
