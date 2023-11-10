@@ -337,28 +337,28 @@ margin-top: 30px;
     }
 
     /*css til overskrift analyse*/
-#analyseoverskrift{
+    #analyseoverskrift{
     color: #1d1717;
     text-align: center;
-}
+    }
 
 /*css for nøkkelord-liste i analysen*/
 
-#nokkelliste{
+    #nokkelliste{
     list-style: none;
     padding: 1rem;
     
-}
+    }
 
 /*css for bilder i analysen*/
 
-#fancyanalyse img{
+    #fancyanalyse img{
     max-width: 900px;
-}
+    }
 
 /*css for tabell*/
 
-#tabell {
+    #tabell {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     line-height: normal;
@@ -379,6 +379,12 @@ margin-top: 30px;
     text-align: center;
     background-color: #a8a39f;
     color: #000;
+   }
+
+   /*css for forbedringer-liste*/
+
+   #forbedringer{
+    text-align: left;
    }
 
 }
