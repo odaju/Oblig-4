@@ -35,7 +35,8 @@
                 </nav>
         </header>
         <main>
-            <h1>Nettsteds Analyse og forbedringer</h1>
+            <div id="fancyanalyse">
+                <h1>Nettsteds Analyse og forbedringer</h1>
                 <section>
                     <h4>Nøkkelord</h4>
                         <p>Ettersom oppgaven vår i stor grad har vært å lage en nettbutikk for sko, falt det selvfølgelig naturlig å velge nøkkelord som er forbundet med sko. Jeg valgte nøkkelordene mine basert på
@@ -51,10 +52,11 @@
                         </ul>
                         <img src="img/googletrends.png" alt="skjermbilde av nøkkelord">
                 </section>
-                <!--Nytt område for lighthouseanalysen-->
+                <!--Nytt område for Analyse oblig 4-->
                 <section>
                     <h4>SEO analyse med Lighthouse og Webaim</h4>
                     <p>I tråd med oppgavens neste punkt kjørte jeg en SEO analyse ved hjelp av lighthouse på alle 3 sidene av nettsiden. Under kan vi se analysen av de forskjellige sidene, før det ble gjort endringer.</p>
+                        <!--Forside-->
                         <p>Forside:</p>
                             <img src="img/pre-adjustments/index /startbilde.png" alt="skjermbilde av lighthouse analyse">
                             <img src="img/pre-adjustments/index /performance.png" alt="skjermbilde av performance analyse">
@@ -65,6 +67,7 @@
                                 <p>Best practices får en score på 95, hvor lighthouse begrunner det med at den finner en browser feil linket til nettsiden.</p>
                             <img src="img/pre-adjustments/index /seo.png" alt="skjermbilde av seo analyse">
                                 <p>Forsiden får en score på 95 for SEO, hvor det begrunnes med at det mangler metadata.</p>
+                            <!--Produktside-->
                         <h4>Produktside:</h4>
                             <img src="img/pre-adjustments/produkt/produkt.png" alt="skjermbilde av lighthouse analyse produktside">
                             <img src="img/pre-adjustments/produkt/produkt_performance.png" alt="skjermbilde av performance analyse produktside">
@@ -75,6 +78,7 @@
                                 <p>På best practices for produktsiden gir lighthouse en score på 95. Det begrunnes med samme browser feil som nevnt på forsiden.</p>
                             <img src="img/pre-adjustments/produkt/produkt_seo.png" alt="skjermbilde av seo analyse produktside">
                                 <p>Produktsiden får en score på 92 og det begrunnes med at det mangler metadata og metadescription.</p>
+                            <!--Handlekurvside-->
                         <h4>Handlekurv</h4>
                             <img src="img/pre-adjustments/handlekurv/handlekurv.png" alt="skjermbilde av lighthouse analyse handlekurvside">
                             <img src="img/pre-adjustments/handlekurv/handlekurv_perf.png" alt="skjermbilde av performance analyse handlekurvside">
@@ -122,6 +126,7 @@
                         <img src="img/pre-adjustments/chatgpt/oppsummering/chat_oppsumering.png" alt="skjermbilde av chagpt oppsumering">
                         <img src="img/pre-adjustments/chatgpt/oppsummering/chat_oppsumering2.png" alt=" nytt skjermbilde av chatgpt oppsumering">
                 </section>
+
                 <!--Nytt område for tabell-->
                 <section>
                     <h4>Tabell</h4>
@@ -131,27 +136,45 @@
                             <th>Lighthouse</th>
                             <th>Webaim</th>
                             <th>ChatGpt</th>
-                            <th>Sammenlikning</th>
                         </tr>
+                        <!--Ny linje tabell-->
                         <tr>
-                            <td>Accesibility og SEO</td>
-                            <td>Beskriver at det er for dårlig kontrast mellom bakgrunnen og skrift på flere elementer på siden. Gir også beskjed om at det finnes duplikater av samme id. Forelslår endring på alt attributter 
-                                på bildene tilhørende produktsiden.</td>
-                            <td> Gir også beskjed om at det er for dårlig kontrast mellom bakgrunnen og skrift på flere av elementene på siden. Foreslår også at det bør settes inn en h1,foreslår endring på alt beskrivelser tilhørende bilder på produktsiden</td>
-                            <td>Foreslår flere alt attributter på bilder, endring av prisformatering fra ,- til kr, endring av labels på knapper, foreslår en meta tag i head, foreslår å inkludere et favicon,
-                                foreslår endring av alt beskrivelser på bilder tilhørende produktsiden.</td>
-                            <td>Boks 5</td>
+                            <td>Kontrast problem</td>
+                            <td>Beskriver at det er for dårlig kontrast mellom bakgrunnen og skrift på flere elementer på siden.</td>
+                            <td> Gir også beskjed om at det er for dårlig kontrast mellom bakgrunnen og skrift på flere av elementene på siden.</td>
+                            <td>Sier ingenting om kontrast og fargebruk.</td>
                         </tr>
+                        <!--Ny linje tabell-->
                         <tr>
-                            <td>Boks 1</td>
-                            <td>Boks 2</td>
-                            <td>Boks 3</td>
-                            <td>Boks 4</td>
-                            <td>Boks 5</td>
+                            <td>Alt Attributter</td>
+                            <td>Forelslår endring på alt attributter på bildene tilhørende produktsiden.</td>
+                            <td>Foreslår endring på alt beskrivelser tilhørende bilder på produktsiden.</td>
+                            <td>Foreslår endring av alt beskrivelser på bilder tilhørende produktsiden.</td>
+                        </tr>
+                        <!--Ny linje tabell-->
+                        <tr>
+                            <td>Duplikat av id tag</td>
+                            <td>Gir også beskjed om at det finnes duplikater av samme id på produktbildene.</td>
+                            <td>Sier ingenting om duplikat av id.</td>
+                            <td>Nevner ikke unik id for bildene, men nevner det for "legg til i handlekurv" knappen på produktsiden.</td>
+                        </tr>
+                        <!--Ny linje tabell-->
+                        <tr>
+                            <td>H1</td>
+                            <td>Sier ingenting om manglende h1.</td>
+                            <td>Foreslår også at det bør settes inn en h1.</td>
+                            <td>Sier ingenting om manglende h1.</td>
+                        </tr>
+                        <!---Ny linje tabell-->
+                        <tr>
+                            <td>Meta tag</td>
+                            <td>Foreslår å legge til en meta description for å bedre SEO</td>
+                            <td>Foreslår å legge til en meta description for å bedre SEO</td>
+                            <td>Foreslår å legge til en meta description for å bedre SEO</td>
                         </tr>
                     </table>
                 </section>
-
+            </div>
         </main>
     </div>
         <footer class="flex-section-footer">
