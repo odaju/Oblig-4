@@ -170,10 +170,16 @@ main section a{
 }
 
 #handlekurv{
+    list-style: none;
     text-align: center;
     font-weight: bold;
     color: #1d1717;
 }
+
+.liste{
+    list-style: none;
+}
+
 
 .handklekurv-btn{
     background-color: #a8a39f;
