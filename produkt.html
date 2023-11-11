@@ -33,16 +33,16 @@
                     </ul>
                     <label>
                         Søk
-                        <input type="text" name="search" placeholder="Merke,uniformsko.." role="search">
+                        <input type="text" name="search" placeholder="Merke,uniformsko..">
                     </label>
                  <!-- start kode lånt fra https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet-->
                     <section id="hovedinnhold" tabindex="-1"></section>
                 <!--slutt kode lånt-->
                 </nav>
         </header>
-        <main role="main">
+        <main role="main" itemscope itemtype="https://schema.org/Product"> <!--micro-->
             <a id="brodsmule" href="index.html">Hjem > Produkter > Damesko</a>
-            <h4>Damesko</h4>
+            <h4 itemprop="name">Damesko</h4> <!--micro-->
             <section class="flex-section-produkt">
                 <article>
                     <img src="img/womens-shoes-4360460_640.jpg" alt="bilde av sorte damesko">
@@ -62,6 +62,10 @@
                     <p class="priser">1399 kr</p>
                     <a href="handlekurv.html" class="handklekurv-btn">Legg til i handlekurv</a>
                 </article>
+                <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating"> <!--micro-->
+                    <meta itemprop="reviewCount" content="100">
+                    <meta itemprop="ratingValue" content="4.4">
+                </div>
             </section>
         </main>
     </div>
