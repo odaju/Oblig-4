@@ -16,14 +16,16 @@
         <div id="grid-container">
         <header>
                 <h1><a href="index.html" id="Logo">Cloudwalking</a></h1>
+                 <!-- start kode lånt fra https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet-->
                 <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
-                <div class="mobil-navbar">
+                <!--slutt kode lånt-->
+                <div class="mobil-navbar" role="navigation">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i id="ham" class="fa-solid fa-bars"></i>
                     <i class="fa-regular fa-user"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
-                <nav class="navbar">
+                <nav class="navbar" role="navigation">
                     <ul>
                         <li><a href="produkt.html">Produkter</a></li>
                         <li><a href="handlekurv.html">Handlekurv</a></li>
@@ -31,19 +33,21 @@
                     </ul>
                     <label>
                         Søk
-                        <input type="text" name="search" placeholder="Merke,uniformsko..">
+                        <input type="text" name="search" placeholder="Merke,uniformsko.." role="search">
                     </label>
+                 <!-- start kode lånt fra https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet-->
                     <section id="hovedinnhold" tabindex="-1"></section>
+                <!--slutt kode lånt-->
                 </nav>
         </header>
-        <main>
+        <main role="main">
             <section class="flex-section">
                 <h2>Produkter</h2>
                 <a href="produkt.html" class="button">Dame</a>
                 <a href="#" class="button">Herre</a>
             </section>
             <article class="flex-section-bilde">
-                    <img src="img/shoes-2538424_640.jpg" alt="bilde av sko">
+                    <img src="img/shoes-2538424_640.jpg" alt="bilde av sko" role="presentation">
                     <p>Image by <a href="https://pixabay.com/users/eloigomez_-5992849/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2538424">eloigomez_</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2538424">Pixabay</a></p>
             <h3>Kampanje!</h3>
             </article>
@@ -52,7 +56,7 @@
             </article>
         </main>
     </div>
-        <footer class="flex-section-footer">
+        <footer class="flex-section-footer" role="contentinfo">
             <ul class="socials">
                 <li><i class="fa-brands fa-facebook"></i></li>
                 <li><i class="fa-brands fa-instagram"></i></li>

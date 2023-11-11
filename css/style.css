@@ -388,6 +388,7 @@ margin-top: 30px;
    }
    
    /*css for tastatursnarvei*/
+   /*start kode lånt fra https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet*/
 
    .snarvei {
     position: absolute;
@@ -397,5 +398,6 @@ margin-top: 30px;
     .snarvei:focus {
     left: 0px;
     }
+/*slutt kode lånt*/
 
 }
