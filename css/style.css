@@ -386,5 +386,16 @@ margin-top: 30px;
    #forbedringer{
     text-align: left;
    }
+   
+   /*css for tastatursnarvei*/
+
+   .snarvei {
+    position: absolute;
+    left: -2000px;
+    top: 0px;
+    }
+    .snarvei:focus {
+    left: 0px;
+    }
 
 }
